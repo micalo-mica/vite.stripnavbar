@@ -1,3 +1,25 @@
 .hero {
   height: calc(100vh - 4rem);
 }
+
+.heroContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+  color: var(--clr-red-dark);
+}
+
+.heroContainer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.heroContainer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 50%;
+  line-height: 1.5rem;
+}
