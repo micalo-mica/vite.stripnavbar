@@ -1,7 +1,13 @@
-import hero from "./hero.css";
+import { useGlobalContext } from "../../context/NavContext";
+import "./hero.css";
 
 const Hero = () => {
-  return <div>Hero</div>;
+  const { closeSubmenu } = useGlobalContext();
+  return (
+    <div className="hero" onMouseOver={closeSubmenu}>
+      Hero
+    </div>
+  );
 };
 
 export default Hero;
